@@ -1,9 +1,9 @@
 /* Space out content a bit */
-html, body, #map-canvas {
+/*html, body, #map-canvas {
   height: 100%;
   margin: 0px;
   padding: 0px;
-}
+}*/
 body {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -81,3 +81,5 @@ body {
     border-bottom: 0;
   }
 }
+/* city map css */
+.angular-google-map-container { height: 400px; }

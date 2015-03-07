@@ -17,7 +17,7 @@ angular.module('devApp')
     $scope.search = 'bushwick';
 
     var geocoder = new google.maps.Geocoder();
-    $scope.$watch('search',function(oldValue,newValue){
+    $scope.$watch('search',function(){
     	// console.log($scope.search);
     
 	    geocoder.geocode( { 'address': $scope.search}, function(results, status) {

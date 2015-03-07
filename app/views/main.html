@@ -1,10 +1,14 @@
 <div class="jumbotron">
-  <h1>Google Map</h1>
-  <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
-  <!-- <div id="map-canvas"></div> -->
+  
+  <div>Search Ctiy Maps: <input type="text" ng-model="search"></div>
+  <div>{{search}}</div>
+  <div>Long: <input type="text" ng-model="map.center.latitude" value="{{map.center.latitude}}"></div>
+  <div>Lat: <input type="text" ng-model="map.center.longitude" value="{{map.center.longitude}}"></div>
+  
+  
   
 </div>
-
 <div class="row marketing">
-  
+  <h1>Google Map</h1>
+  <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
 </div>

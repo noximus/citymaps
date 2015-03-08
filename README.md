@@ -10,9 +10,9 @@ Tech:
 
 Install:
 
-1. Clone repo: git@github.com:noximus/citymaps.git
-2. npm install - (may require sudo)
-3. bower install
+1. Clone repo: $git clone git@github.com:noximus/citymaps.git
+2. Install Grunt Packages: $ npm install - (may require sudo)
+3. Install Bower Packages: $ bower install
 
 
 Run Server:

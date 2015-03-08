@@ -1,6 +1,7 @@
 # citymaps
 
 Tech:
+
 -AngularJS
 -Grunt
 -Bower
@@ -15,4 +16,5 @@ Install:
 
 
 Run Server:
-1.grunt serve
+
+1. $grunt serve

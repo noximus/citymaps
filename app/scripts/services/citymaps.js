@@ -8,16 +8,6 @@
  * Factory in the devApp.
  */
 angular.module('devApp')
-  .factory('cityMaps', function () {
-    // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
-    // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
+  .factory('cityMaps', function ($resource) {
+    return $resource('http://coresearch.citymaps.com/search/:search_q?lat=42.74&lon=-74.01&radius=20&zoom=15&businesses=1');
   });

@@ -1,12 +1,19 @@
 <div class="jumbotron">
-  
-  <div>Search Ctiy Maps: <input type="text" ng-model="search"></div>
-  <div>Long: <input type="text" ng-model="map.center.latitude" value="{{map.center.latitude}}"></div>
-  <div>Lat: <input type="text" ng-model="map.center.longitude" value="{{map.center.longitude}}"></div>
-  <div ng-repeat="places in cityMaps.items">{{places.category_name}}</div>
+  <div class="row">
+  <div class="col-md-4">Search Ctiy Maps: </div><div class="col-md-8"><input class="form-control" type="text" ng-model="search"></div>
+  <div class="col-md-4">Long: </div><div class="col-md-8"><input class="form-control" type="text" ng-model="map.center.latitude" value="{{map.center.latitude}}"></div>
+  <div class="col-md-4">Lat: </div><div class="col-md-8"><input class="form-control" type="text" ng-model="map.center.longitude" value="{{map.center.longitude}}"></div>
+    
+  </div>
   <!-- {{data}} -->
 </div>
 <div class="row marketing">
-  <h1>Google Map</h1>
-  <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+  <h1>Google Map with CityMap Markers </h1>
+  <h4>*list of places below map.</h4>
+  <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+    <ui-gmap-markers models="map.markers" coords="'coords'" idKey="'idKey'"></ui-gmap-markers>
+  </ui-gmap-google-map>
+</div>
+<div class="row">
+  <div class="col-md-12"><div ng-repeat="places in map.tempMarkers.items">{{places.name}}</div></div>
 </div>

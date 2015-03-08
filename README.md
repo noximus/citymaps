@@ -11,7 +11,7 @@ Tech:
 Install:
 
 1. download Repo
-2. npm install
+2. npm install - (may require sudo)
 3. bower install
 
 
